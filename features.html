@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fitur Kelas - Lunart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #d0e8f2, #fce1e4);
+    }
+    .card {
+      border: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .navbar, footer {
+      background-color: #fce1e4 !important;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-primary" href="index.html">Lunart</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Fitur</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">⋮</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#" onclick="toggleDarkMode()">Toggle Dark Mode</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Section: Daftar Kelas -->
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Kelas Desain yang Kami Tawarkan</h2>
+    <div class="row g-4">
+      
+      <!-- Menggambar -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/fitur1.jpg" class="card-img-top" alt="Kelas Menggambar">
+          <div class="card-body">
+            <h5 class="card-title">📝 Menggambar</h5>
+            <p class="card-text">Belajar teknik dasar dan lanjutan menggambar dengan pensil dan pena digital maupun manual.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Melukis -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/fitur2.jpg" class="card-img-top" alt="Kelas Melukis">
+          <div class="card-body">
+            <h5 class="card-title">🎨 Melukis</h5>
+            <p class="card-text">Ekspresikan kreativitasmu dengan cat air, akrilik, dan teknik digital painting bersama mentor berpengalaman.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Memahat -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/fitur3.jpg" class="card-img-top" alt="Kelas Memahat">
+          <div class="card-body">
+            <h5 class="card-title">🪵 Memahat</h5>
+            <p class="card-text">Pelajari seni memahat dan membentuk karya tiga dimensi dari tanah liat, kayu, dan media lainnya.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center text-dark py-4 mt-5">
+  <div class="container">
+    <p class="mb-1 fw-bold">Lunart</p>
+    <p class="mb-2">Kreativitas tanpa batas, belajar di mana saja.</p>
+    <div>
+      <a href="#" class="text-dark me-3">Instagram</a>
+      <a href="#" class="text-dark me-3">YouTube</a>
+      <a href="#" class="text-dark">TikTok</a>
+    </div>
+    <small>&copy; 2025 Lunart. All rights reserved.</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<body class="features-page">
+</body>
+</html>

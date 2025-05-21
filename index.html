@@ -1,0 +1,104 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lunart - Les Desain Online</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #d0e8f2, #fce1e4);
+    }
+    .navbar, footer {
+      background-color: #fce1e4 !important;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-primary" href="#">Lunart</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="features.html">Fitur</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">⋮</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#" onclick="toggleDarkMode()">Toggle Dark Mode</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Carousel -->
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/Beranda1.png" class="d-block w-100" alt="Banner 1" />
+    </div>
+    <div class="carousel-item">
+      <img src="img/beranda2.jpg" class="d-block w-100" alt="Banner 2" />
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Deskripsi -->
+<section class="py-5 text-center">
+  <div class="container">
+    <h2 class="fw-bold">Belajar Desain Secara Interaktif & Menyenangkan</h2>
+    <p class="lead">Gabung bersama ratusan siswa lainnya dan tingkatkan kreativitasmu dari rumah.</p>
+  </div>
+</section>
+
+<!-- Promo Modal -->
+<div class="modal fade" id="promoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <h5 class="modal-title">🎁 Promo Spesial!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Dapatkan diskon 30% untuk kelas pertama kamu! Daftar sekarang!</p>
+        <a href="contact.html" class="btn btn-primary">Hubungi Kami</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center text-dark py-4 mt-5">
+  <div class="container">
+    <p class="mb-1 fw-bold">Lunart</p>
+    <p class="mb-2">Kreativitas tanpa batas, belajar di mana saja.</p>
+    <div>
+      <a href="#" class="text-dark me-3">Instagram</a>
+      <a href="#" class="text-dark me-3">YouTube</a>
+      <a href="#" class="text-dark">TikTok</a>
+    </div>
+    <small>&copy; 2025 Lunart. All rights reserved.</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
